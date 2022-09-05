@@ -91,8 +91,11 @@ header #menu-bar i:hover{
         background: #ffffff;
         box-shadow: 0 .2rem 1rem rgba(0, 0, 0 , .1);
         border-top: 1px solid var(--pink);
+        clip-path: polygon(0 0 , 100% 0, 100% 0, 0 0);
     }
-    
+    header .nav-bar.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
 }
 @media only screen and (min-width:450px) and (max-width:700px){
     header{
@@ -107,6 +110,10 @@ header #menu-bar i:hover{
         background: #ffffff;
         box-shadow: 0 .2rem 1rem rgba(0, 0, 0 , .1);
         border-top: 1px solid var(--pink);
+        clip-path: polygon(0 0 , 100% 0, 100% 0, 0 0);
+    }
+    header .nav-bar.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     }
     header .nav-bar a{
         display: block;
@@ -119,7 +126,6 @@ header #menu-bar i:hover{
         font-size: 25px;
     }
 }
-
 @media only screen and (min-width:700px) and (max-width:900px){
     header .nav-bar a{
         font-size: 16px;
