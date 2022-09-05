@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+:root{
+  --purple:#834299;
+  --pink:#F83292;
+  --gradient:linear-gradient(90deg,var(--purple),var(--pink));
+  --white:#ffffff;
+  --black:#000000;
+}
+*::selection{
+    color: var(--white);
+    background:var(--black);
+}
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+}
+body{
+    background-color: #f9f9f9;
+}
+header{
+    position: fixed;
+    top: 0%;left: 0%;
+    width: 100%;
+    background: #ffffff;
+    box-shadow: 0 .2rem 1rem rgba(0, 0, 0 , .1);
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
+    padding: 1% 8%;
+    z-index: 1000;
+}
+header .logo{
+    font-weight: 500;
+    font-size: 20px;
+    color:var(--purple);
+    margin-right: auto;
+}
+header .logo span{
+    color: var(--pink);
+}
+header .nav-bar a{
+    font-weight: 400;
+    font-size: 16px;
+    padding: 0 8px;
+    color: var(--purple);
+}
+header .nav-bar a:hover{
+    color: var(--pink);
+    border-bottom: 2px solid var(--purple);
+    padding-bottom: 1%;
+}
+header #menu-bar i{
+    font-size: 25px;
+    color: var(--purple);
+    display: none;
+
+}
+header #menu-bar i:hover{
+    color: var(--pink);
+    cursor: pointer;
+    transform: scale(1.1);
+}
