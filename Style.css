@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 :root{
   --purple:#834299;
   --pink:#F83292;
@@ -22,11 +23,39 @@
 body{
     background-color: #f9f9f9;
 }
+button{
+    padding:10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    background: var(--gradient);
+}
+button:hover{
+    transform: scale(1.1);
+}
+button a{
+    font-size: 14px;
+    color: var(--white);
+    font-weight: 500;
+}
+.heading{
+    background: var(--gradient);
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    padding-top:3% ;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+
+}
+
 header{
     position: fixed;
     top: 0%;left: 0%;
     width: 100%;
-    background: #ffffff;
+    background: var(--white);
     box-shadow: 0 .2rem 1rem rgba(0, 0, 0 , .1);
     display: flex;
     align-items: center;
@@ -95,25 +124,46 @@ header #menu-bar i:hover{
     font-size: 15px;
     padding-top:7px ;
 }
-.home .container button{
-    padding:10px 20px;
-    border-radius: 20px;
-    cursor: pointer;
-    background: var(--gradient);
-}
-.home .container button:hover{
-    transform: scale(1.1);
-}
-.home .container button a{
-    font-size: 14px;
-    color: var(--white);
-    font-weight: 500;
-}
-.home .btn{
+.home .container .btn{
     padding-top: 5%;
 }
-
-
+.features{
+    margin: 0% 8%;
+}
+.features .box-container{
+    display: flex;
+    align-items: center;
+    margin: 3% 0%;
+}
+.features .box-container .box{
+    background: var(--white);
+    box-shadow: 0 .2rem 1rem rgba(0, 0, 0 , .1);
+    border-radius: 5px;
+    border: 2px solid rgba(0, 0, 0 , .1);
+    text-align: center;
+    margin: 0 3%;
+    padding: 4% 0;
+}
+.features .box-container .box img{
+    height: 120px;   
+}
+.features .box-container .box h3{
+    font-size: 20px;
+    color: var(--black);
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    padding-top: 6px;
+}
+.features .box-container .box p{
+    font-size: 13px;
+    font-weight: 400;
+    color: #666;
+    padding-top: 6px;
+    text-justify: justify;
+}
+.features .box-container .box .btn{
+    padding-top: 5%;
+}
 
 
 
