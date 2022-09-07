@@ -28,6 +28,7 @@ button{
     border-radius: 20px;
     cursor: pointer;
     background: var(--gradient);
+    align-items: center;
 }
 button:hover{
     transform: scale(1.1);
@@ -128,7 +129,7 @@ header #menu-bar i:hover{
     padding-top: 5%;
 }
 .features{
-    margin: 0% 8%;
+    margin: 0% 4%;
 }
 .features .box-container{
     display: flex;
@@ -141,14 +142,14 @@ header #menu-bar i:hover{
     border-radius: 5px;
     border: 2px solid rgba(0, 0, 0 , .1);
     text-align: center;
-    margin: 0 3%;
-    padding: 4% 0;
+    padding: 2%;
+    margin: 0 1%;
 }
 .features .box-container .box img{
     height: 120px;   
 }
 .features .box-container .box h3{
-    font-size: 20px;
+    font-size: 16px;
     color: var(--black);
     font-weight: bold;
     font-family: 'Roboto', sans-serif;
@@ -164,9 +165,98 @@ header #menu-bar i:hover{
 .features .box-container .box .btn{
     padding-top: 5%;
 }
-
-
-
-
-
-
+.about{
+    background: var(--white);
+}
+.about .colmun{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;   
+    margin: 3% 8% 0% 8%;
+}
+.about .colmun .image img{
+    width: 500px;
+}
+.about .colmun .content h3{
+    font-size: 25px;
+    color: #666;
+    font-family:'Roboto', sans-serif;
+    font-weight: bold;
+    width: 400px;
+    line-height: 35px;
+}
+.about .colmun .content p{
+    color: var(--black);
+    font-weight: 400;
+    line-height: 25px;
+    font-size: 15px;
+    padding-top:15px ;
+    width: 450px;
+}
+.about .colmun .content .buttons{
+    padding-top: 6%;
+    display: flex;
+    justify-content: center;
+}
+.about .colmun .content .buttons i{
+    font-size: 17px;
+}
+.about .colmun .content .buttons .position{
+    margin-left:15px
+}
+.Subscribe-for-new-features{
+    text-align: center;
+    padding: 3% 0% 2% 0%;
+    background-position: center;
+    background-size: cover;
+    background: url(Images/subscribe-bg.png) no-repeat;
+}
+.Subscribe-for-new-features h2{
+    text-transform: uppercase;
+    color: var(--white);
+    font-size: 28px;
+    font-weight: 500;
+    letter-spacing: 0.10em;
+}
+.Subscribe-for-new-features p{
+    margin: 7px auto;
+    width: 45rem;
+    color: #f9f9f9;
+    font-weight: 400;
+    font-size: 15px;
+}
+.Subscribe-for-new-features form{
+    display: flex;
+    margin: 2rem auto;
+    border-radius: 2rem;
+    border: .1rem solid var(--white);
+    max-width: 40rem;
+    height: 2.5rem;
+}
+.Subscribe-for-new-features input[type = "email"] {
+    padding: 0 0 0 2rem;
+    background: none;
+    color: var(--white);
+    font-size: 17;
+    font-weight: 500;
+    width: 100%;
+}
+.Subscribe-for-new-features input[type = "email"]::placeholder{
+    color: var(--black);
+    font-size: 15px;
+    text-transform:capitalize ;
+}
+.Subscribe-for-new-features input[type="submit"]{
+    background: var(--white);
+    border-radius: 4rem;
+    width: 10rem;
+    cursor: pointer;
+    font-size: 17px;
+    color: #000000;
+    font-weight: 500;
+    margin: 2px 5px 2px 0px;
+}
+.Subscribe-for-new-features input[type="submit"]:hover{
+    background: var(--gradient);
+    color: var(--white);
+}
