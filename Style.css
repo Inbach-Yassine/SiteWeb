@@ -364,3 +364,93 @@ header #menu-bar i:hover{
 .pricing .box-container .box .butt{
     padding-top: 2rem;
 }
+.contact{
+    display: flex;
+    align-items: center;
+    margin: 5% 8% 4% 8%;
+}
+.contact .image img{
+    width: 80%;
+}
+.contact form{
+    box-shadow: 0 .2rem 1rem rgba(0, 0, 0 , .1);
+    border: 3px solid rgba(0, 0, 0 , .1);
+    border-radius: 5px;
+    padding: 2rem 4rem;
+    background: var(--white);
+}
+.contact form .heading{
+    text-align: left;
+    padding: 0px 0px 1rem 0px;
+}
+.contact form .inputbox input, .contact form .inputbox textarea{
+    width: 100%;
+    background: none;
+    color: #666;
+    border-bottom: 1.5px solid var(--purple);
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 500;
+}
+.contact form .inputbox textarea{
+    height: 130px;
+    resize: none;
+}
+.contact form .inputbox label{
+    position: absolute;
+    left: 0;
+    font-size: 15px;
+    color: #666;
+    top: 1.5rem;
+    transition: 2s linear;
+}
+.contact form .inputbox{
+    position: relative;
+}
+.contact form .inputbox input:focus ~ label,
+.contact form .inputbox textarea:focus ~ label,
+.contact form .inputbox textarea:valid ~ label,
+.contact form .inputbox input:valid ~ label {
+    top: -5px;
+    color: var(--pink);
+    font-size: 16px;
+
+}
+.contact form input[type="submit"]{
+    background: var(--pink);
+    border-radius: 4rem;
+    cursor: pointer;
+    font-size: 17px;
+    padding: 8px 20px;
+    color: #000000;
+    font-weight: 500;
+}
+.contact form input[type="submit"]:hover{
+    background: var(--gradient);
+    color: var(--white);
+}
+.contact form .btn{
+    margin-top:9px ;
+
+}
+footer{
+    text-align: center;
+    background: var(--gradient);
+    padding: 2% 0;
+}
+footer p{
+    font-size: 18px;
+    color: var(--white);
+    font-weight: 500;
+    letter-spacing: 0.12em;
+}
+footer p a{
+    color: var(--black) ;
+    font-size: 17px;
+    cursor: pointer;
+}
+footer p a:hover{
+    text-decoration:underline ;
+    color: var(--white);
+}
