@@ -230,8 +230,8 @@ header #menu-bar i:hover{
     margin: 2rem auto;
     border-radius: 2rem;
     border: .1rem solid var(--white);
-    max-width: 40rem;
-    height: 2.5rem;
+    max-width: 35rem;
+    height: 2.8rem;
 }
 .Subscribe-for-new-features input[type = "email"] {
     padding: 0 0 0 2rem;
