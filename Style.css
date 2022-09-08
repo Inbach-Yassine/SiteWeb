@@ -140,7 +140,7 @@ header #menu-bar i:hover{
     background: var(--white);
     box-shadow: 0 .2rem 1rem rgba(0, 0, 0 , .1);
     border-radius: 5px;
-    border: 2px solid rgba(0, 0, 0 , .1);
+    border: 3px solid rgba(0, 0, 0 , .1);
     text-align: center;
     padding: 2%;
     margin: 0 1%;
@@ -259,4 +259,108 @@ header #menu-bar i:hover{
 .Subscribe-for-new-features input[type="submit"]:hover{
     background: var(--gradient);
     color: var(--white);
+}
+.review{
+    margin: 0 4%;
+}
+.review .box-container{
+    display: flex;
+    align-items: center;
+    margin: 3% 0%;
+}
+.review .box-container .box{
+    background: var(--white);
+    text-align: center;
+    position: relative;
+    margin: 1rem;
+    padding: 1rem 2rem;
+    box-shadow: 0 .2rem 1rem rgba(0, 0, 0 , .1);
+    border: 3px solid rgba(0, 0, 0 , .1);
+    border-radius: 5px;
+}
+.review .box-container .box .fa-quote-right{
+    position: absolute;
+    top: 0;
+    right: 2rem;
+    font-size: 5rem;
+    color: var(--purple);
+    opacity: .3;
+}
+.review .box-container .box .user img{
+    border-radius: 50%;
+    object-fit: cover;
+    width: 6rem;
+    height: 6rem;
+    margin-top: 2rem;
+}
+.review .box-container .box .user h3{
+    color: var(--pink);
+    font-size: 1rem;
+}
+.review .box-container .box .stars{
+    color: var(--purple);
+    font-size: 1rem;
+    padding: 4px 0px 0px 0px;
+}
+.review .box-container .box .paragraphe{
+    font-size: 13px;
+    font-weight: 400;
+    color: #666;
+    padding-top: 6px;
+    text-justify: justify;
+}
+.pricing{
+    background:#FDFFFA ;
+}
+.pricing .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3% 0%;
+}
+.pricing .box-container .box{
+    background: var(--white);
+    text-align: center;
+    margin: 1rem;
+    padding: 1rem 2rem;
+    box-shadow: 0 .2rem 1rem rgba(0, 0, 0 , .1);
+    border: 3px solid rgba(0, 0, 0 , .1);
+    border-radius: 5px;
+    padding-bottom: 3rem;
+}
+.pricing .box-container .box:hover {
+    border: 2px solid var(--pink);
+}
+.pricing .box-container .box .title{
+    color: var(--purple);
+    font-size: 1.3rem;
+}
+.pricing .box-container .box .price {
+    color: var(--pink);
+    font-size: 1.6rem;
+    padding: 5px 0;
+}
+.pricing .box-container .box .price span {
+    font-size: 1rem;
+    color: var(--purple);
+}
+.pricing .box-container .box ul {
+    list-style: none;
+    padding-top: 10px;
+}
+.pricing .box-container .box ul li{
+    font-size: 1rem;
+    color: #666;
+    padding: 2px 0;
+}
+.pricing .box-container .box ul li .fa-check{
+    color: forestgreen;
+    font-size: 17px;
+}
+.pricing .box-container .box ul li .fa-xmark{
+    color: red;
+    font-size: 17px;
+}
+.pricing .box-container .box .butt{
+    padding-top: 2rem;
 }
