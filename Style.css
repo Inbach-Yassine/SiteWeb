@@ -46,10 +46,9 @@ button a{
     color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
-    padding-top:3% ;
+    padding-top:3%;
     text-transform: uppercase;
     font-family: 'Roboto', sans-serif;
-
 }
 
 header{
@@ -453,4 +452,32 @@ footer p a{
 footer p a:hover{
     text-decoration:underline ;
     color: var(--white);
+}
+@media only screen and (max-width:600px){
+    header .nav-bar a{
+        display: block;
+        margin: 1rem;
+        font-size: 17px;
+        font-weight: 500;
+    }
+    header .nav-bar a:hover{
+        width: 10%;
+    }
+    header .nav-bar{
+        position: absolute;
+        top: 100%;
+        width: 100%;
+        left: 0;
+        background: var(--white);
+        border-top: 2px solid var(--purple);
+        padding: 2rem 4rem;
+        box-shadow: 0 .2rem 1rem rgba(0, 0, 0 , .1);
+    }
+    header #menu-bar i{
+        display: initial;
+    }
+    header{
+        padding: 2% 8%;
+    }
+
 }
