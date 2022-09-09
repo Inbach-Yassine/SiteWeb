@@ -20,9 +20,6 @@
     font-family: 'Poppins', sans-serif;
     border: none;
 }
-section{
-    min-height: 100vh;
-}
 body{
     background-color: #f9f9f9;
     width: 1263px;
@@ -53,12 +50,6 @@ button a{
     padding-top:3%;
     text-transform: uppercase;
     font-family: 'Roboto', sans-serif;
-}
-section{
-    min-height: 100vh;
-    padding:0 9%;
-    padding-top: 7.5rem;
-    padding-bottom: 2rem;
 }
 header{
     position: fixed;
@@ -104,12 +95,12 @@ header #menu-bar i:hover{
 }
 .home{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     background: url(Images/home-bg-img.png) no-repeat;
     background-size: cover;
     background-position: center;
-    padding: 5% 8%;
+    padding-top: 3rem;
 }
 .home .image img{
     width: 500px;
@@ -496,11 +487,4 @@ footer p a:hover{
     .nav-bar.open{
         display: block;
     }
-    .home{
-        flex-direction: column-reverse;
-    }
-    .home .image img{
-        width: 100%;
-    }
-  
 }
