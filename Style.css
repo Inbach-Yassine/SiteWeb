@@ -20,8 +20,12 @@
     font-family: 'Poppins', sans-serif;
     border: none;
 }
+section{
+    min-height: 100vh;
+}
 body{
     background-color: #f9f9f9;
+    width: 1263px;
 }
 button{
     padding:10px 20px;
@@ -50,7 +54,12 @@ button a{
     text-transform: uppercase;
     font-family: 'Roboto', sans-serif;
 }
-
+section{
+    min-height: 100vh;
+    padding:0 9%;
+    padding-top: 7.5rem;
+    padding-bottom: 2rem;
+}
 header{
     position: fixed;
     top: 0%;left: 0%;
@@ -458,18 +467,20 @@ footer p a:hover{
         display: block;
         margin: 1rem;
         font-size: 17px;
+        color: var(--white);
         font-weight: 500;
     }
     header .nav-bar a:hover{
         width: 10%;
+        border-bottom: none;
     }
     header .nav-bar{
         position: absolute;
         top: 100%;
         width: 100%;
         left: 0;
-        background: var(--white);
-        border-top: 2px solid var(--purple);
+        background: var(--gradient);
+        border-top: 2px solid var(--black);
         padding: 2rem 4rem;
         box-shadow: 0 .2rem 1rem rgba(0, 0, 0 , .1);
     }
@@ -479,5 +490,17 @@ footer p a:hover{
     header{
         padding: 2% 8%;
     }
-
+    .nav-bar{
+        display: none;
+    }
+    .nav-bar.open{
+        display: block;
+    }
+    .home{
+        flex-direction: column-reverse;
+    }
+    .home .image img{
+        width: 100%;
+    }
+  
 }
